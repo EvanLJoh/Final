@@ -34,13 +34,25 @@ public class Main {
 
         String receipt = "";
         ArrayList<String> useritems = new ArrayList<String>();
-        ArrayList<Integer> usercount = new ArrayList<Integer>(  );
+        ArrayList<Integer> usercount = new ArrayList<Integer>();
         Scanner userinfo = new Scanner(System.in);
         String info;
 
         double total;
         double finalT = 0;
 
+        System.out.println("Welcome to COBIS Convenience Store!\n");
+        System.out.println("The ten items offered are displayed below: ");
+        System.out.println("1 :  Red-Hot Spicy Doritos" +
+                "\n2 :  Cool ranch Doritos" +
+                "\n3 :  Coke" +
+                "\n4 :  Diet Coke" +
+                "\n5 :  Pepsi" +
+                "\n6 :  Five Hour Energy" +
+                "\n7 :  Sunflower seeds" +
+                "\n8 :  Peanuts" +
+                "\n9 :  Macbook Charger" +
+                "\n10 : Dell Charger");
         System.out.println("Enter your name: ");
         while (!(info = userinfo.nextLine()).equalsIgnoreCase("Done")) {
 
